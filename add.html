@@ -1,0 +1,56 @@
+<html>
+<head>
+	<style>
+		* {
+			font-size: 14pt;
+		}
+		body	{
+			padding-top: 100px;
+			padding-left: 100px;
+		}
+	</style>
+<script>
+	// function definition
+	function increment() {
+		// 1. read base value
+	var val = document.getElementById("divRes").innerHTML;
+	// 2. parse the value
+	var parsedValue = parseInt(val);
+	// 3. set the value to the div
+	document.getElementById("divRes").innerHTML = parsedValue + 1;
+
+
+	}
+	function handleIncrement() {
+		document.getElementById("divRes").innerHTML = incrementBy(document.getElementById("divRes").innerHTML, "oiodfsd");
+	}
+
+	function incrementBy(baseValue, by) {
+		var bv = parseInt(baseValue);
+		var byv = parseInt(by);
+		return bv + byv;
+	}
+	function add(a, b) {
+		return a+b;
+	}
+</script>
+</head>
+<body>
+	<div id="divRes">0</div>
+	<!-- function called with onclick event -->
+	<input type="button" value="+" onclick="increment()"/>
+	<input type="button" value="++" onclick="handleIncrement()"/>
+	
+	<tabe>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+
+			</td>
+		</tr>
+	</tabe>
+</body>
+
+</html>

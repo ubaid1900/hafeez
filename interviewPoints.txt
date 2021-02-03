@@ -1,0 +1,11 @@
+class Animal {
+public int NumberOfLegs {}
+public string Type {}
+}
+
+Animal spider = new Spider();
+spider.NumberOfLegs = 5;
+// class is a blueprint from which objects could be created.
+// object is instances of a class
+// encapsulation 
+// function/method 

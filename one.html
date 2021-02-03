@@ -1,0 +1,140 @@
+<html>
+
+<head>
+	<script>
+
+		function operationIfOld1(a, b, op) {
+			/*
+			==
+			>
+			<
+			>=
+			<=
+			*/
+			debugger;
+			console.log(a, b, op);
+			if (op == '+') {
+				return a + b;
+			}
+			if (op == '-') {
+				return a - b;
+			}
+			if (op == '*') {
+				return a * b;
+			}
+			if (op == '/') {
+				return a / b;
+			}
+			console.log('final');
+		}
+		function operationIfOld2(a, b, op) {
+			/*
+			==
+			>
+			<
+			>=
+			<=
+			*/
+			debugger;
+			console.log(a, b, op);
+			var result;
+			if (op == '+') {
+				result = a + b;
+			}
+			if (op == '-') {
+				result = a - b;
+			}
+			if (op == '*') {
+				result = a * b;
+			}
+			if (op == '/') {
+				result = a / b;
+			}
+			console.log('final');
+			return result;
+		}
+		function operationIfOld3(a, b, op) {
+			/*
+			==
+			>
+			<
+			>=
+			<=
+			*/
+			debugger;
+			console.log(a, b, op);
+			var result;
+
+			if (op == '+') {
+				result = a + b;
+			}
+			else if (op == '-') {
+				result = a - b;
+			}
+			else if (op == '*') {
+				result = a * b;
+			}
+			else if (op == '/') {
+				result = a / b;
+			}
+			console.log('final');
+			return result;
+		}
+		function operation(a, b, op) {
+			/*
+			==
+			>
+			<
+			>=
+			<=
+			*/
+			debugger;
+			console.log(a, b, op);
+			var result;
+
+			switch (op) {
+				case '+':
+					result = a + b;
+					break;
+				case '-':
+					result = a - b;
+					break;
+				case '*':
+					result = a * b;
+					break;
+				case '/':
+					result = a / b;
+					break;
+				case 'x':
+				case 'y': {
+					if (op == 'x') {
+						console.log('case x');
+					} else {
+						console.log('case y');
+					}
+					break;
+				}
+				default:
+					console.log('default');
+					break;
+			}
+			return result;
+		}
+		console.log(operation(3, 2, 'x'));
+		// console.log(operation(undefined, 3));
+		// console.log(operation('hellox', 'helloy'));
+		// console.log(operation(10, 'helloy'));
+		// console.log(operation('hellox', 99));
+		// console.log(operation());
+	</script>
+</head>
+
+<body>
+	<div id="divOne">div 1</div>
+</body>
+
+<script type="text/javascript">
+	// getDiv();
+</script>
+
+</html>
